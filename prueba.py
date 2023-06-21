@@ -15,3 +15,5 @@ print('Los individuos marcan goles, pero los equipos ganan partidos\n','Llegar j
 ### Zully ###
 
 print ("Hello Zully")
+
+# laura 21 de junio de 2023 7:40 am
