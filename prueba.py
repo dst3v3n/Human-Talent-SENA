@@ -14,9 +14,3 @@ print("¡Muchas gracias por todo el soporte que nos brindaste este mes!")
 print ("Hello Laura")
 print('Los individuos marcan goles, pero los equipos ganan partidos')
 print('Llegar juntos es el principio. Mantenerse juntos, es el progreso.')
-
-### Zully ###
-
-print ("Hello Zully")
-
-# laura 21 de junio de 2023 7:40 am
