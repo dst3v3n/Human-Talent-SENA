@@ -14,8 +14,3 @@ print("¡Muchas gracias por todo el soporte que nos brindaste este mes!")
 print ("Hello Laura")
 print('Los individuos marcan goles, pero los equipos ganan partidos')
 print('Llegar juntos es el principio. Mantenerse juntos, es el progreso.')
-
-### Zully ###
-
-print ("Hello Zully")
-print ("que bonito es saludar y ser saludado")
