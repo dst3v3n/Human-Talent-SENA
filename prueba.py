@@ -17,4 +17,3 @@ print('Los individuos marcan goles, pero los equipos ganan partidos\n','Llegar j
 ### Zully ###
 
 print ("Hello Zully")
-print ("que bonito es saludar y ser saludado")
