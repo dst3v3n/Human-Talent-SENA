@@ -1,4 +1,6 @@
 from Usuario import *
+from Educacion import *
+from Experiencia import *
 
 class Aspirante (Usuario):
     def __init__(self, Id: int, Nombre: str, Apellido: str, Telefono: int, Correo: str, Password: str):
@@ -12,6 +14,7 @@ class Aspirante (Usuario):
         self.__fecha_fin_ex = []
         self.__name_empresa = []
         self.__funciones = []
+        self.__cargo = []
 
     ### Añadir Educacion ###
 
@@ -23,13 +26,12 @@ class Aspirante (Usuario):
 
     ### Añadir Experiencia ###
 
-    def agregar_experiencia (self, Fecha_Inicio:str , Fecha_Fin:str , Name_Empresa:str , Funciones:str):
+    def agregar_experiencia (self, Fecha_Inicio:str , Fecha_Fin:str , Name_Empresa:str , Funciones:str , Cargo:str):
         self.__fecha_inicio_ex.append (Fecha_Inicio)
         self.__fecha_fin_ex.append (Fecha_Fin)
         self.__name_empresa.append (Name_Empresa)
         self.__funciones.append (Funciones)
-        # def Cargo (self, Nombre:str, Descripcion:str , Competencia):
-            
+        self.__cargo.append(Cargo)
 
     ### Setters ###
 
