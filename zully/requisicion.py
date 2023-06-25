@@ -78,3 +78,5 @@ def gettipo_salario(self):
 
 
 
+
+
