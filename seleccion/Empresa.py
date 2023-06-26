@@ -35,15 +35,18 @@ class Empresa (Usuario):
         obj1 = Oferta (codigo_oferta , num_vacante , fecha_inicio , fecha_cierre , rango_salaria , experiencia , tipo_contrato , teletrabajo)
         obj1.agregar_ubicacion(x , y)
         obj1.agregar_cargo(cno , Nombre_cargo , Descripcion , Competencia)
+        
+    def enlistar_postulantes (self):
+        for name in self.__nombre:
+                print(name)
+        for apellido in self.__apellido:
+                print(apellido)
 
 
-    ### Setters ###
 
     def setNit (self,Nit:int):
         self.__nit = Nit
     
-    ### Getters ###
 
-    @property
     def getNit (self):
         return self.__nit
