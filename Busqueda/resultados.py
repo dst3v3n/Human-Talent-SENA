@@ -1,7 +1,7 @@
 from sys import path
 
 path.append("..\\Human-Talent-SENA")
-from Postulacion.Oferta import *
+from seleccion.Oferta import *
 from Filtro import *
 class Resultados:
     
