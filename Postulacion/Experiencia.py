@@ -6,12 +6,10 @@ class Experiencia :
         self.__cargo = Cargo
         self.__funciones = []
 
-    ### Agregar Funciones ###
     
     def agregar_funciones (self, Funcion:str):
         self.__funciones.append(Funcion)
 
-    ### Setters ###
 
     def setName_empresa (self, Name_Empresa:str):
         self.__name_empresa = Name_Empresa
@@ -32,24 +30,18 @@ class Experiencia :
                     self.__funciones.pop(indice)
                     self.__funciones.insert(indice , Actualizacion)
     
-    ### Getters ###
 
-    @property 
     def getName_empresa (self):
         return self.__name_empresa
     
-    @property 
-    def getFehca_inicio (self):
+    def getFecha_inicio (self):
         return self.__fecha_inicio
     
-    @property 
     def getFecha_cierre (self):
         return self.__fecha_cierre
     
-    @property 
     def getCargo (self):
         return self.__cargo
-    
-    @property 
+
     def getFunciones (self):
         return self.__funciones

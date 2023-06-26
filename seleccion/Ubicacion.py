@@ -5,6 +5,8 @@ class Ubicacion:
         self.__codigo_depar = None
         self.__codigo_municipio = None
 
+    
+    ### Setters ###
 
     def setName_depar (self, Name_Depar:str):
         self.__name_depar = Name_Depar
@@ -18,14 +20,21 @@ class Ubicacion:
     def setCodigo_municipio (self , Codigo_Municipio:int):
         self.__codigo_municipio = Codigo_Municipio
 
+    
+    ### Getters ###
+
+    @property
     def getName_depar (self):
         return self.__name_depar
     
+    @property
     def getName_municipio (self):
         return self.__name_municipio
     
+    @property
     def getCodigo_depar (self):
         return self.__codigo_depar
     
+    @property
     def getCodigo_municipio (self):
         return self.__codigo_municipio

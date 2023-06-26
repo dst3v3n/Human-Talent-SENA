@@ -18,7 +18,7 @@ class Postulacion:
 
             
       def Postular (self, Id: int, Nombre: str, Apellido: str, Telefono: int, Correo: str, Password: str):
-            print ("Te quieres postular")
+            print ("Quiere realizar una postulacion para esta oferta")
             print ("1.Si")
             print ("2.No")
             selector = int(input())
@@ -42,48 +42,38 @@ class Postulacion:
             for apellido in self.__apellido:
                   print(apellido)
 
-
-      ### Setters ###
-
-      def setEstado (self , Estado:str):
+      def setEstado (self, Estado:str):
             self.__estado = Estado
       
-      def setHabilidades (self, Name:str , Actualizacion:str):
+      def setHabilidades (self, Name:str, Actualizacion:str):
             for i in self.__habilidades:
                   if Name == i:
                         indice = self.__habilidades.index(i)
                         self.__habilidades.pop(indice)
                         self.__habilidades.insert(indice , Actualizacion)
 
-      def setJornada_laboral (self, Name:str , Actualizacion:str):
+      def setJornada_laboral (self, Name:str, Actualizacion:str):
             for i in self.__jornada_laborar:
                   if Name == i:
                         indice = self.__jornada_laborar.index(i)
                         self.__jornada_laborar.pop(indice)
                         self.__jornada_laborar.insert(indice , Actualizacion)
 
-      def setRequerimientos_especiales (self, Name:str , Actualizacion:str):
+      def setRequerimientos_especiales (self, Name:str, Actualizacion:str):
             for i in self.__requerimientos_especiales:
                   if Name == i:
                         indice = self.__requerimientos_especiales.index(i)
                         self.__requerimientos_especiales.pop(indice)
                         self.__requerimientos_especiales.insert(indice , Actualizacion)
 
-
-      ### Getters ###
-
-      @property
       def getEstado (self):
             return self.__estado
-      
-      @property
+
       def getHabilidades (self):
             return self.__habilidades
       
-      @property
       def getJornada_laboral (self):
             return self.__jornada_laborar
-      
-      @property
+
       def getRequerimientos (self):
             return self.__requerimientos_especiales

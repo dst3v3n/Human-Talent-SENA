@@ -1,8 +1,12 @@
-from Usuario import *
-from Educacion import *
-from Experiencia import *
+from sys import path
 
-class Aspirante(Usuario):
+path.append("..\\Human-Talent-SENA")
+
+from Seleccion.Usuario import *
+from Seleccion.Educacion import *
+from Seleccion.Experiencia import *
+
+class Aspirante (Usuario):
     def __init__(self, Id: int, Nombre: str, Apellido: str, Telefono: int, Correo: str, Password: str):
         Usuario.__init__(self,Id, Nombre, Telefono, Correo, Password)
         self.__apellido = Apellido
@@ -16,12 +20,15 @@ class Aspirante(Usuario):
         self.__funciones = []
         self.__cargo = []
 
+    ### Añadir Educacion ###
+
     def agregar_educacion (self, Tipo:str , Name_Institucion:str , Titulacion:str , Fecha_fin:str):
         self.__tipo.append (Tipo)
         self.__name_institucion.append (Name_Institucion)
         self.__titulacion.append (Titulacion)
         self.__fecha_fin.append (Fecha_fin)
 
+    ### Añadir Experiencia ###
 
     def agregar_experiencia (self, Fecha_Inicio:str , Fecha_Fin:str , Name_Empresa:str , Funciones:str , Cargo:str):
         self.__fecha_inicio_ex.append (Fecha_Inicio)
@@ -29,6 +36,8 @@ class Aspirante(Usuario):
         self.__name_empresa.append (Name_Empresa)
         self.__funciones.append (Funciones)
         self.__cargo.append(Cargo)
+
+    ### Setters ###
 
     def setApellido (self , Apellido:str):
         self.__apellido = Apellido
@@ -61,17 +70,24 @@ class Aspirante(Usuario):
                 self.__tipo.pop(indice)
                 self.__tipo.insert(indice , Actualizacion)
 
+    ### Getters ###
+
+    @property
     def getApellido (self):
         return self.__apellido
     
+    @property
     def getTipo (self):
         return self.__tipo
-
+    
+    @property
     def getName_institucion (self):
         return self.__name_institucion
 
+    @property
     def getTitulacion (self):
         return self.__titulacion
 
+    @property
     def getFecha_fin (self):
         return self.__fecha_fin

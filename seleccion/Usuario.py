@@ -6,8 +6,7 @@ class Usuario:
         self.__correo = Correo
         self.__password = Password
 
-    def setId (self,Id:int):
-        self.__id= Id
+    ### Setters ###
 
     def setNombre (self, Nombre:str):
         self.__nombre = Nombre
@@ -21,21 +20,24 @@ class Usuario:
     def setPassword (self, Password:str):
         self.__password = Password
 
+    ### Getters ###
 
+    @property
     def getId (self):
         return self.__id
     
-    
+    @property
     def getNombre (self):
         return self.__nombre
     
-    
+    @property
     def getTelefono (self):
         return self.__telefono
     
-    
+    @property
     def getCorreo (self):
         return self.__correo
     
+    @property
     def getPassword (self):
         return self.__password
