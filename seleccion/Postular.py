@@ -2,7 +2,7 @@ from sys import path
 
 path.append("..\\Human-Talent-SENA")
 
-from Seleccion.Aspirante import *
+from seleccion.Aspirante import *
 
 class Postulacion:
       counter = 0

@@ -2,8 +2,8 @@ from sys import path
 
 path.append("..\\Human-Talent-SENA")
 
-from Seleccion.Ubicacion import *
-from Seleccion.Aspirante import *
+from seleccion.Ubicacion import *
+from seleccion.Aspirante import *
 
 class Oferta:
     def __init__(self , codigo_oferta:int ,  num_vacante:int, fecha_inicio:str , fecha_cierre:str , rango_salaria:list , experiencia:str , tipo_contrato:str , teletrabajo: bool = False):

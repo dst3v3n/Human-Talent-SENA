@@ -2,14 +2,14 @@ from sys import path
 
 path.append("..\\Human-Talent-SENA")
 
-from Seleccion.Aspirante import *
-from Seleccion.Empresa import *
-from Seleccion.Experiencia import *
-from Seleccion.Oferta import *
-from Seleccion.Cargo import *
-from Seleccion.Postular import *
-from Seleccion.Ubicacion import *
-from Seleccion.Educacion import *
+from seleccion.Aspirante import *
+from seleccion.Empresa import *
+from seleccion.Experiencia import *
+from seleccion.Oferta import *
+from seleccion.Cargo import *
+from seleccion.Postular import *
+from seleccion.Ubicacion import *
+from seleccion.Educacion import *
 
 
 ###Postulacion###

@@ -2,7 +2,7 @@ from sys import path
 
 path.append("..\\Human-Talent-SENA")
 
-from Seleccion.Oferta import *
+from seleccion.Oferta import *
 
 class Cargo:
     def __init__(self,Codigo_Cno:int, Nombre:str, Descripcion:str , Competencia:list):
