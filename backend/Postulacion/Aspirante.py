@@ -2,9 +2,9 @@ from sys import path
 
 path.append("..\\Human-Talent-SENA")
 
-from Postulacion.Usuario import *
-from Postulacion.Educacion import *
-from Postulacion.Experiencia import *
+from backend.Postulacion.Usuario import *
+from backend.Postulacion.Educacion import *
+from backend.Postulacion.Experiencia import *
 
 class Aspirante (Usuario):
     def __init__(self, Id: int, Nombre: str, Apellido: str, Telefono: int, Correo: str, Password: str):

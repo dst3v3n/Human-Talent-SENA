@@ -1,11 +1,11 @@
 from sys import path 
 path.append("C:\Human-Talent-SENA\Postulacion")
-from seleccion.Empresa import *
-from seleccion.Oferta import *
-from seleccion.Ubicacion import *
-from seleccion.Usuario import *
-from seleccion.Educacion import *
-from seleccion.Cargo import *
+from backend.seleccion.Empresa import *
+from backend.Postulacion.Oferta import *
+from backend.Postulacion.Ubicacion import *
+from backend.Postulacion.Usuario import *
+from backend.Postulacion.Educacion import *
+from backend.Postulacion.Cargo import *
 
 class requisicion:
     def __init__(self,id_requisicion,manual_funciones, horario_laboral,
